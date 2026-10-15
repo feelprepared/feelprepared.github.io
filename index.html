@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feel Prepared — Information for Pregnancy and Birth</title>
+  <meta name="description" content="Clear, trusted information to help you feel prepared for pregnancy, labour and birth.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" href="favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --nhs-blue: #005EB8;
+      --nhs-blue-soft: #4A9FD4;
+      --nhs-blue-light: #D5E8F5;
+      --nhs-blue-pale: #EBF4FB;
+      --nhs-charcoal: #2C3E50;
+      --nhs-charcoal-mid: #4A5568;
+      --nhs-grey2: #768692;
+      --nhs-grey4: #D8DDE0;
+      --nhs-grey5: #F8FAFB;
+    }
+    body { font-family: 'DM Sans', sans-serif; color: var(--nhs-charcoal); background: var(--nhs-grey5); min-height: 100vh; display: flex; flex-direction: column; }
+
+    .fp-header { display: flex; align-items: center; justify-content: space-between; padding: 0 1.75rem; background: var(--nhs-blue); height: 60px; }
+    .fp-logo { font-size: 27px; font-weight: 500; color: white; text-decoration: none; }
+    .fp-logo span { color: #9BD4F5; }
+    .fp-staff-btn {
+      font-size: 17px; color: white; opacity: 0.85;
+      border: 1px solid rgba(255,255,255,0.35); background: none; padding: 6px 14px;
+      border-radius: 4px; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.15s, background 0.15s;
+    }
+    .fp-staff-btn:hover { opacity: 1; background: rgba(255,255,255,0.12); }
+
+    .fp-hero { background: var(--nhs-blue-pale); border-bottom: 1px solid var(--nhs-blue-light); padding: 2.5rem 1.75rem 2.25rem; text-align: center; }
+    .fp-hero img { width: 96px; height: 96px; margin-bottom: 1rem; border-radius: 50%; }
+    .fp-hero h1 { font-size: 34px; font-weight: 500; line-height: 1.25; margin-bottom: 0.6rem; }
+    .fp-hero p { font-size: 18px; color: var(--nhs-charcoal-mid); max-width: 520px; margin: 0 auto; line-height: 1.5; }
+
+    .fp-body { flex: 1; width: 100%; max-width: 760px; margin: 0 auto; padding: 0 1.25rem 2rem; }
+    .fp-section-label { font-size: 12px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--nhs-grey2); padding: 1.5rem 0.25rem 0.6rem; }
+    .fp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+    .fp-card {
+      display: flex; flex-direction: column; gap: 6px; padding: 1.1rem 1.2rem;
+      border: 1px solid var(--nhs-grey4); border-left: 4px solid var(--nhs-blue); border-radius: 4px;
+      background: white; text-decoration: none; color: inherit; transition: background 0.15s, border-color 0.15s;
+    }
+    .fp-card:hover, .fp-card:focus-visible { background: var(--nhs-blue-pale); border-color: var(--nhs-blue-soft); border-left-color: var(--nhs-blue); }
+    .fp-card h2 { font-size: 20px; font-weight: 500; color: var(--nhs-blue); }
+    .fp-card p { font-size: 15px; color: var(--nhs-charcoal-mid); line-height: 1.45; }
+    .fp-card .fp-tag { font-size: 13px; color: var(--nhs-grey2); margin-top: 2px; }
+
+    .fp-footer { background: white; border-top: 1px solid var(--nhs-grey4); padding: 0.9rem 1.75rem; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .fp-footer img { height: 36px; width: auto; display: block; }
+    .fp-footer-credit { font-size: 12px; color: var(--nhs-grey2); }
+    .fp-footer-credit strong { color: var(--nhs-charcoal-mid); font-weight: 500; }
+
+    @media (max-width: 600px) {
+      .fp-hero h1 { font-size: 28px; }
+      .fp-hero p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="fp-header">
+    <a href="./" class="fp-logo">feel<span>prepared</span></a>
+    <a href="https://maternity.feelprepared.co.uk/clinic.html" class="fp-staff-btn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      Staff resources
+    </a>
+  </header>
+
+  <section class="fp-hero">
+    <img src="site-logo.png" alt="">
+    <h1>Feel prepared for your birth</h1>
+    <p>Clear, trusted information about anaesthesia and pain relief in pregnancy, labour and birth.</p>
+  </section>
+
+  <main class="fp-body">
+    <p class="fp-section-label">Choose a topic</p>
+    <div class="fp-grid">
+      <!-- To add a new section, copy one of these cards and change the link, title and text. -->
+      <a class="fp-card" href="labour/">
+        <h2>Pain relief in labour and caesarean birth</h2>
+        <p>Videos and leaflets about your pain relief options, in your own language.</p>
+        <span class="fp-tag">20 languages</span>
+      </a>
+      <!-- PAEDS CARD (hidden until the section is ready). To switch it on, delete this line and the closing line under the card.
+      <a class="fp-card" href="paeds/">
+        <h2>Anaesthesia for children</h2>
+        <p>What to expect when your child has an anaesthetic, and how to help them feel ready.</p>
+        <span class="fp-tag">For parents and children</span>
+      </a>
+      -->
+    </div>
+  </main>
+
+  <footer class="fp-footer">
+    <img src="nhs-lothian-charity-logo.png" alt="NHS Lothian Charity">
+    <span class="fp-footer-credit">Created by <strong>Dr Katie Turnbull</strong></span>
+  </footer>
+</body>
+</html>
