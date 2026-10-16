@@ -66,11 +66,24 @@
       .fp-hero p { font-size: 16px; }
       .fp-footer { flex-direction: column; justify-content: center; text-align: center; }
     }
+
+    /* Header logo, matching the labour section */
+    .fp-header { height: 76px; }
+    .fp-logo { display: inline-flex; align-items: center; gap: 10px; font-size: 32px; }
+    .fp-logo img { height: 46px; width: 46px; border-radius: 50%; display: block; }
+    .fp-logo .fp-logo-text { color: white; }
+    .fp-logo .fp-logo-text span { color: #9BD4F5; }
+    @media (max-width: 600px) {
+      .fp-header { padding: 0 0.85rem; height: 64px; }
+      .fp-logo { font-size: 21px; gap: 6px; }
+      .fp-logo img { height: 30px; width: 30px; }
+      .fp-staff-btn { font-size: 12px; padding: 5px 9px; gap: 4px; white-space: nowrap; }
+    }
   </style>
 </head>
 <body>
   <header class="fp-header">
-    <a href="./" class="fp-logo">feel<span>prepared</span></a>
+    <a href="./" class="fp-logo"><img src="site-logo.png" alt=""><span class="fp-logo-text">feel<span>prepared</span></span></a>
     <a href="https://maternity.feelprepared.co.uk/clinic.html" class="fp-staff-btn">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
       Staff resources
@@ -78,7 +91,6 @@
   </header>
 
   <section class="fp-hero">
-    <img src="site-logo.png" alt="">
     <h1>Feel prepared for your birth</h1>
     <p>Clear, trusted information about anaesthesia and pain relief in pregnancy, labour and birth.</p>
   </section>
