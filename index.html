@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feel Prepared — Information for Pregnancy and Birth</title>
-  <meta name="description" content="Clear, trusted information to help you feel prepared for pregnancy, labour and birth.">
+  <title>Feel Prepared — Information About Anaesthesia and Pain</title>
+  <meta name="description" content="Clear, trusted information about anaesthesia and pain, from NHS Lothian teams.">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
@@ -92,6 +92,9 @@
     .fp-footer-links { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--nhs-grey2); }
     .fp-footer-links a { color: var(--nhs-blue); text-decoration: none; }
     .fp-footer-links a:hover { text-decoration: underline; }
+    .fp-grid-two { grid-template-columns: 1fr 1fr; max-width: 760px; margin: 0 auto; gap: 12px; }
+    .fp-label-two { max-width: 760px; margin: 0 auto; padding-top: 1.75rem; }
+    @media (max-width: 640px) { .fp-grid-two { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -100,14 +103,14 @@
   </header>
 
   <section class="fp-hero">
-    <h1>Feel prepared for your birth</h1>
-    <p>Clear, trusted information about anaesthesia and pain relief in pregnancy, labour and birth.</p>
-    <p class="fp-from">From anaesthetists at the Simpson Centre for Reproductive Health, Royal Infirmary of Edinburgh</p>
+    <h1>Feel prepared for your care</h1>
+    <p>Clear, trusted information about anaesthesia and pain relief, for pregnancy and birth and for children and young people.</p>
+    <p class="fp-from">From anaesthetists and pain teams in NHS Lothian</p>
   </section>
 
   <main class="fp-body">
-    <!-- When a second topic is added, put this line back above the cards: <p class="fp-section-label">Choose a topic</p> -->
-    <div class="fp-grid fp-grid-single">
+    <p class="fp-section-label fp-label-two">Choose a topic</p>
+    <div class="fp-grid fp-grid-two">
       <!-- To add a new section, copy one of these cards and change the link, title and text. -->
       <a class="fp-card fp-card-main" href="labour/">
         <h2>Pain relief in labour and caesarean birth</h2>
@@ -115,15 +118,14 @@
         <span class="fp-cta">Choose your language <span aria-hidden="true">&rarr;</span></span>
         <span class="fp-tag">Available in 20 languages</span>
       </a>
-      <!-- PAEDS CARD (hidden until the section is ready). To switch it on, delete this line and the closing line under the card.
-      <a class="fp-card" href="paeds/">
-        <h2>Anaesthesia for children</h2>
-        <p>What to expect when your child has an anaesthetic, and how to help them feel ready.</p>
-        <span class="fp-tag">For parents and children</span>
+      <a class="fp-card fp-card-main" href="Paediatric-Chronic-Pain/">
+        <h2>Paediatric pain management</h2>
+        <p>For children and young people living with persistent pain, their families, and referring clinicians, at the Royal Hospital for Children and Young People.</p>
+        <span class="fp-cta">Find out more <span aria-hidden="true">&rarr;</span></span>
+        <span class="fp-tag">Passcode given in clinic</span>
       </a>
-      -->
     </div>
-    <p class="fp-general">General information only. Always discuss your choices with your midwife or anaesthetist.</p>
+    <p class="fp-general">General information only. Always discuss your choices with your healthcare team.</p>
   </main>
 
   <footer class="fp-footer">
