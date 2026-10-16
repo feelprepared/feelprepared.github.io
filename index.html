@@ -79,30 +79,41 @@
       .fp-logo img { height: 30px; width: 30px; }
       .fp-staff-btn { font-size: 12px; padding: 5px 9px; gap: 4px; white-space: nowrap; }
     }
+
+    /* Single featured topic, footer links, general information line */
+    .fp-from { font-size: 14px !important; color: var(--nhs-grey2) !important; margin-top: 0.9rem !important; }
+    .fp-grid-single { grid-template-columns: 1fr; max-width: 560px; margin: 1.75rem auto 0; }
+    .fp-card-main { padding: 1.5rem 1.5rem 1.35rem; gap: 8px; }
+    .fp-card-main h2 { font-size: 23px; }
+    .fp-card-main p { font-size: 16px; }
+    .fp-cta { font-size: 17px; font-weight: 500; color: var(--nhs-blue); margin-top: 6px; }
+    .fp-card-main:hover .fp-cta { text-decoration: underline; }
+    .fp-general { max-width: 560px; margin: 1.25rem auto 0; padding: 0 0.5rem; text-align: center; font-size: 14px; line-height: 1.5; color: var(--nhs-charcoal-mid); }
+    .fp-footer-links { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--nhs-grey2); }
+    .fp-footer-links a { color: var(--nhs-blue); text-decoration: none; }
+    .fp-footer-links a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <header class="fp-header">
     <a href="./" class="fp-logo"><img src="site-logo.png" alt=""><span class="fp-logo-text">feel<span>prepared</span></span></a>
-    <a href="https://maternity.feelprepared.co.uk/clinic.html" class="fp-staff-btn">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-      Staff resources
-    </a>
   </header>
 
   <section class="fp-hero">
     <h1>Feel prepared for your birth</h1>
     <p>Clear, trusted information about anaesthesia and pain relief in pregnancy, labour and birth.</p>
+    <p class="fp-from">From anaesthetists at the Simpson Centre for Reproductive Health, Royal Infirmary of Edinburgh</p>
   </section>
 
   <main class="fp-body">
-    <p class="fp-section-label">Choose a topic</p>
-    <div class="fp-grid">
+    <!-- When a second topic is added, put this line back above the cards: <p class="fp-section-label">Choose a topic</p> -->
+    <div class="fp-grid fp-grid-single">
       <!-- To add a new section, copy one of these cards and change the link, title and text. -->
-      <a class="fp-card" href="labour/">
+      <a class="fp-card fp-card-main" href="labour/">
         <h2>Pain relief in labour and caesarean birth</h2>
         <p>Leaflets about your pain relief options in your own language, plus videos in English.</p>
-        <span class="fp-tag">20 languages</span>
+        <span class="fp-cta">Choose your language <span aria-hidden="true">&rarr;</span></span>
+        <span class="fp-tag">Available in 20 languages</span>
       </a>
       <!-- PAEDS CARD (hidden until the section is ready). To switch it on, delete this line and the closing line under the card.
       <a class="fp-card" href="paeds/">
@@ -112,11 +123,17 @@
       </a>
       -->
     </div>
+    <p class="fp-general">General information only. Always discuss your choices with your midwife or anaesthetist.</p>
   </main>
 
   <footer class="fp-footer">
     <img src="nhs-lothian-charity-logo.png" alt="NHS Lothian Charity">
     <span class="fp-footer-credit">Created by <strong>Dr Katie Turnbull</strong></span>
+    <nav class="fp-footer-links" aria-label="Footer">
+      <a href="labour/disclaimer.html">Disclaimer</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://maternity.feelprepared.co.uk/clinic.html">For staff</a>
+    </nav>
   </footer>
 </body>
 </html>
