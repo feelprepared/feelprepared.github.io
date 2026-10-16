@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer — Feel Prepared</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" href="favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --nhs-blue: #005EB8;
+      --nhs-blue-soft: #4A9FD4;
+      --nhs-blue-light: #D5E8F5;
+      --nhs-blue-pale: #EBF4FB;
+      --nhs-charcoal: #2C3E50;
+      --nhs-charcoal-mid: #4A5568;
+      --nhs-grey2: #768692;
+      --nhs-grey4: #D8DDE0;
+      --nhs-grey5: #F8FAFB;
+    }
+    body { font-family: 'DM Sans', sans-serif; color: var(--nhs-charcoal); background: var(--nhs-grey5); min-height: 100vh; display: flex; flex-direction: column; }
+
+    .fp-header { display: flex; align-items: center; justify-content: space-between; padding: 0 1.75rem; background: var(--nhs-blue); height: 76px; }
+    .fp-logo { display: inline-flex; align-items: center; gap: 10px; font-size: 32px; font-weight: 500; color: white; text-decoration: none; }
+    .fp-logo img { height: 46px; width: 46px; border-radius: 50%; display: block; }
+    .fp-logo .fp-logo-text { color: white; }
+    .fp-logo .fp-logo-text span { color: #9BD4F5; }
+    .fp-back-btn {
+      font-size: 15px; color: white; opacity: 0.85;
+      border: 1px solid rgba(255,255,255,0.35); padding: 6px 14px; border-radius: 4px; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.15s, background 0.15s;
+    }
+    .fp-back-btn:hover { opacity: 1; background: rgba(255,255,255,0.12); }
+
+    .fp-hero { background: var(--nhs-blue-pale); border-bottom: 1px solid var(--nhs-blue-light); padding: 2rem 1.75rem 1.75rem; text-align: center; }
+    .fp-eyebrow { font-size: 12px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--nhs-blue-soft); margin-bottom: 0.4rem; }
+    .fp-hero h1 { font-size: 36px; font-weight: 500; }
+
+    .fp-body { flex: 1; width: 100%; max-width: 740px; margin: 0 auto; padding: 1.75rem 1.75rem 3rem; }
+    .fp-intro { font-size: 18px; line-height: 1.75; color: var(--nhs-charcoal-mid); margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--nhs-grey4); }
+    .fp-urgent { background: white; border: 1px solid var(--nhs-grey4); border-left: 4px solid var(--nhs-blue); border-radius: 4px; padding: 1rem 1.2rem; margin-bottom: 2rem; font-size: 17px; line-height: 1.6; }
+    .fp-section { margin-bottom: 2rem; }
+    .fp-section h2 { font-size: 22px; font-weight: 500; margin-bottom: 0.6rem; padding-bottom: 0.5rem; border-bottom: 1.5px solid var(--nhs-grey4); }
+    .fp-section p, .fp-section li { font-size: 17px; line-height: 1.75; color: var(--nhs-charcoal-mid); }
+    .fp-section p { margin-bottom: 0.75rem; }
+    .fp-section p:last-child { margin-bottom: 0; }
+    .fp-section ul { padding-left: 1.3rem; margin-bottom: 0.75rem; }
+    .fp-section a, .fp-urgent a { color: var(--nhs-blue); }
+    .fp-updated { font-size: 14px; color: var(--nhs-grey2); }
+
+    .fp-footer { background: white; border-top: 1px solid var(--nhs-grey4); padding: 0.9rem 1.75rem; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .fp-footer img { height: 36px; width: auto; display: block; }
+    .fp-footer-credit { font-size: 12px; color: var(--nhs-grey2); }
+    .fp-footer-credit strong { color: var(--nhs-charcoal-mid); font-weight: 500; }
+    .fp-footer-links { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--nhs-grey2); }
+    .fp-footer-links a { color: var(--nhs-blue); text-decoration: none; }
+    .fp-footer-links a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .fp-header { padding: 0 0.85rem; height: 64px; }
+      .fp-logo { font-size: 21px; gap: 6px; }
+      .fp-logo img { height: 30px; width: 30px; }
+      .fp-back-btn { font-size: 12px; padding: 5px 9px; gap: 4px; }
+      .fp-hero h1 { font-size: 30px; }
+      .fp-body { padding: 1.25rem 1.25rem 2rem; }
+      .fp-footer { flex-direction: column; justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="fp-header">
+    <a href="./" class="fp-logo"><img src="site-logo.png" alt=""><span class="fp-logo-text">feel<span>prepared</span></span></a>
+    <a href="./" class="fp-back-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      Home
+    </a>
+  </header>
+
+  <div class="fp-hero">
+    <p class="fp-eyebrow">About this website</p>
+    <h1>Disclaimer</h1>
+  </div>
+
+  <main class="fp-body">
+
+    <p class="fp-intro">FeelPrepared brings together information about anaesthesia and pain relief to help people feel prepared for their care. It was created by Dr Katie Turnbull, an anaesthetist in NHS Lothian, to improve the quality of care for women and families.</p>
+
+    <div class="fp-urgent">
+      <strong>This website is not for urgent problems.</strong> If you are worried about yourself or your baby, contact your maternity unit straight away. In an emergency, call 999.
+    </div>
+
+    <section class="fp-section">
+      <h2>General information only</h2>
+      <p>The information on this website is general guidance. It does not replace individual advice from your midwife, anaesthetist, doctor or other healthcare professional, who will take your own health and circumstances into account.</p>
+      <p>Please discuss any decisions about your care with your healthcare team. If anything here seems different from what you have been told, follow the advice of the team looking after you.</p>
+    </section>
+
+    <section class="fp-section">
+      <h2>What is on this website</h2>
+      <p>FeelPrepared is made up of separate sections, each with its own purpose:</p>
+      <ul>
+        <li><strong>Pain relief in labour and caesarean birth</strong>: information, leaflets and videos about pain relief options, in several languages. This section has <a href="labour/disclaimer.html">its own disclaimer</a> explaining how its translations were made.</li>
+        <li><strong>Obstetric Anaesthetic Clinic leaflets</strong>: a service that clinic staff use to share selected leaflets with patients by QR code or link.</li>
+      </ul>
+      <p>New sections may be added over time. Where a section needs extra information, it will have its own notice.</p>
+    </section>
+
+    <section class="fp-section">
+      <h2>Who owns the content</h2>
+      <p>Many of the leaflets, videos and resources on this website were produced by other organisations, including NHS Lothian, the <a href="https://www.labourpains.org" target="_blank" rel="noopener">Obstetric Anaesthetists' Association (OAA)</a> and the <a href="https://rcoa.ac.uk" target="_blank" rel="noopener">Royal College of Anaesthetists (RCoA)</a>. They remain the property of their authors and are credited where they appear.</p>
+      <p>FeelPrepared brings these resources together to make them easier to find. It does not claim ownership of them, and including them does not mean those organisations endorse this website.</p>
+    </section>
+
+    <section class="fp-section">
+      <h2>Keeping information up to date</h2>
+      <p>We try to keep the information accurate and current. Leaflets have their own review dates, and guidance can change. If you are unsure whether something still applies to you, please ask your healthcare team.</p>
+    </section>
+
+    <section class="fp-section">
+      <h2>Links to other websites</h2>
+      <p>This website links to other websites, such as NHS and OAA pages. We are not responsible for the content of other websites, and they have their own privacy policies.</p>
+    </section>
+
+    <section class="fp-section">
+      <h2>Your privacy</h2>
+      <p>This website does not ask for your name or any personal or medical details. Leaflet links shared by the clinic do not contain any information about you.</p>
+      <p>Some settings, such as text size, contrast and dark mode, are saved only in your own browser so they are remembered next time. Some pages count visits anonymously, without cookies and without identifying you.</p>
+    </section>
+
+    <section class="fp-section">
+      <h2>Liability</h2>
+      <p>The information on this website is provided in good faith. As far as the law allows, Dr Katie Turnbull and the contributors to this website accept no liability for any errors or omissions, or for decisions made using the information here. Use of this website is at your own discretion.</p>
+    </section>
+
+    <section class="fp-section">
+      <h2>Help us improve</h2>
+      <p>If you are a member of staff and notice anything inaccurate, out of date or unclear, please let the site administrator know so it can be reviewed.</p>
+      <p>If you are a patient and have questions about anything you have read, please speak to your midwife, anaesthetist or healthcare team. They can arrange a professional interpreter if you need one.</p>
+    </section>
+
+    <p class="fp-updated">Last updated: October 2026</p>
+
+  </main>
+
+  <footer class="fp-footer">
+    <img src="nhs-lothian-charity-logo.png" alt="NHS Lothian Charity">
+    <span class="fp-footer-credit">Created by <strong>Dr Katie Turnbull</strong></span>
+    <nav class="fp-footer-links" aria-label="Footer">
+      <a href="./">Home</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://maternity.feelprepared.co.uk/clinic.html">For staff</a>
+    </nav>
+  </footer>
+</body>
+</html>
